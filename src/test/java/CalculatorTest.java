@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import domain.Calculator;
+import domain.StringCalculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -61,4 +62,6 @@ public class CalculatorTest {
 
         assertEquals(result, expected);
     }
+
+
 }

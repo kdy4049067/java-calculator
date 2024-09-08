@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StringCalculatorTest {
@@ -36,7 +37,8 @@ public class StringCalculatorTest {
 
         List<Integer> expectedList = Arrays.asList(1,2,3);
 
-        assertEquals(NumCalculator, expectedList);
+        //assertEquals(NumCalculator, expectedList);
+        assertThat(NumCalculator).isEqualTo(expectedList);
     }
 
     @Test
@@ -49,6 +51,7 @@ public class StringCalculatorTest {
         result = StringCal.addNum(NumCalculator);
         final int expected = 6;
 
-        assertEquals(result, expected);
+        //assertEquals(result, expected);
+        assertThat(result).isEqualTo(expected);
     }
 }
